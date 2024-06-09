@@ -229,7 +229,7 @@ int getChoice() {
 
 int main() {
     // Initialize spell checker with dictionary
-    SpellChecker spellChecker("dictionary.txt");
+    SpellChecker spellChecker("./dictionary/dictionary.txt");
 
     int choice;
     string word;
@@ -269,7 +269,8 @@ int main() {
             case 6:
                 cout << "Enter input file name for batch spelling check: ";
                 cin >> word;
-                spellChecker.batchSpellingCheck(word, "batch_results.txt");
+                word = "batch_input/" + word;
+                spellChecker.batchSpellingCheck(word, "batch_results/batch_results.txt");
                 break;
             case 7:
                 cout << "Exiting program..." << endl;
