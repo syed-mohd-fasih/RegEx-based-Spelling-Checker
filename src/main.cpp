@@ -2,11 +2,8 @@
 #include <iostream>
 #include <fstream>
 #include <regex>
-#include <string>
 #include <unordered_set>
 #include <unordered_map>
-#include <algorithm>
-#include <vector>
 #include <limits>
 
 using namespace std;
@@ -55,8 +52,6 @@ private:
         }
         file.close();
     }
-    
-    
 
     // Compute Levenshtein distance between two words
     int levenshteinDistance(const string& word1, const string& word2) {
@@ -203,7 +198,7 @@ public:
 
 // Simple console-based GUI for user interaction
 void showMenu() {
-    cout << "=======================" << endl;
+    cout << "==========================" << endl;
     cout << "1. Check spelling" << endl;
     cout << "2. Add new word" << endl;
     cout << "3. Remove word" << endl;
@@ -211,7 +206,7 @@ void showMenu() {
     cout << "5. Save dictionary to file" << endl;
     cout << "6. Batch spelling check" << endl;
     cout << "7. Exit" << endl;
-    cout << "=======================" << endl;
+    cout << "==========================" << endl;
 }
 
 // Validate user input for menu choice
@@ -289,5 +284,3 @@ int main() {
 
     return 0;
 }
-
-
