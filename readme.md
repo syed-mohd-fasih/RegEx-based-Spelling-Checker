@@ -34,8 +34,8 @@ The RegEx-Based Spelling Checker uses regular expressions to verify the spelling
 
 2. Clone this repository to your local machine:
     ```sh
-    git clone https://github.com/your-repo/regex-spelling-checker.git
-    cd regex-spelling-checker
+    git clone https://github.com/syed-mohd-fasih/RegEx-based-Spelling-Checker.git
+    cd RegEx-based-Spelling-Checker
     ```
 
 ## Code Structure
